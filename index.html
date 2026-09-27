@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá Vinhomes Grand Park tại Thành phố Thủ Đức, TP. Hồ Chí Minh. Không gian sống đẳng cấp, môi trường sinh thái trong lành cùng hệ sinh thái tiện ích toàn diện.">
+  <title>Vinhomes Grand Park - Không gian sống đẳng cấp</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Header / Navbar
+       ========================================================================== -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg py-3" aria-label="Điều hướng chính">
+      <div class="container">
+        <!-- Logo / Brand -->
+        <a class="navbar-brand" href="#home" aria-label="Trang chủ Vinhomes Grand Park">
+          <span>Vinhomes</span>
+          <span class="brand-badge">Grand Park</span>
+        </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">Tổng quan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Tiện ích</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Liên hệ</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button type="button" class="btn btn-primary-custom btn-sm px-3 py-2" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                Tư vấn ngay
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       Main Content
+       ========================================================================== -->
+  <main>
+    <!-- ========================================================================
+         2. Hero Section
+         ======================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- Hero Left Column: Content -->
+          <div class="col-lg-6 order-1">
+            <div class="hero-content">
+              <span class="hero-eyebrow">KHÔNG GIAN SỐNG ĐẲNG CẤP</span>
+              <h1 class="hero-title">Kiến tạo chuẩn sống mới tại Vinhomes Grand Park</h1>
+              <p class="hero-desc">
+                Khám phá chuẩn mực sống hiện đại giữa lòng Thành phố Thủ Đức với không gian xanh khoáng đạt, 
+                hài hòa cùng thiên nhiên và hệ sinh thái tiện ích toàn diện. Nơi đây mở ra phong cách sống tiện nghi, 
+                văn minh và khởi đầu hoàn hảo cho tương lai phồn vinh của gia đình bạn.
+              </p>
+              <div class="hero-cta-wrapper d-flex flex-wrap gap-3">
+                <a href="#overview" id="heroCtaBtn" class="btn btn-primary-custom">
+                  Khám phá ngay
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
+                </a>
+                <button type="button" class="btn btn-outline-secondary px-4 py-2 border-2 text-primary fw-semibold rounded-3" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                  Đăng ký nhận tin
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: High Quality Real Estate Image -->
+          <div class="col-lg-6 order-2">
+            <div class="hero-image-wrapper">
+              <img 
+                src="assets/images/hero.jpg" 
+                alt="Phối cảnh kiến trúc hiện đại và không gian sống cao cấp tại Vinhomes Grand Park" 
+                class="hero-image"
+                width="1200" 
+                height="800">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Overview Section (Tổng quan dự án)
+         ======================================================================== -->
+    <section id="overview" class="overview-section py-5">
+      <div class="container">
+        <div class="section-header mb-4">
+          <span class="text-uppercase fw-bold text-primary small letter-spacing-1 d-block mb-2">VỊ TRÍ & TỔNG QUAN</span>
+          <h2 class="section-title">Đại đô thị thông minh đẳng cấp quốc tế</h2>
+          <p class="section-subtitle">
+            Tọa lạc tại trung tâm phát triển năng động của Thành phố Thủ Đức, TP. Hồ Chí Minh, 
+            dự án mang đến giải pháp không gian sống hoàn chỉnh và bền vững.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 p-4 rounded-4 shadow-sm bg-white">
+              <div class="d-flex align-items-center mb-3">
+                <div class="p-3 rounded-circle me-3" style="background-color: var(--primary-light); color: var(--primary-color);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                </div>
+                <h3 class="h5 fw-bold mb-0 text-primary">Vị trí chiến lược</h3>
+              </div>
+              <p class="text-secondary mb-0 small">
+                Nằm tại trung tâm kết nối Thành phố Thủ Đức, thuận tiện di chuyển đến các trục giao thông huyết mạch, trung tâm công nghệ và các khu vực lân cận.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 p-4 rounded-4 shadow-sm bg-white">
+              <div class="d-flex align-items-center mb-3">
+                <div class="p-3 rounded-circle me-3" style="background-color: var(--primary-light); color: var(--primary-color);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zM7 4v4.5l3.5 2 1-1.5L8.5 7.5V4H7z"/>
+                  </svg>
+                </div>
+                <h3 class="h5 fw-bold mb-0 text-primary">Môi trường sinh thái</h3>
+              </div>
+              <p class="text-secondary mb-0 small">
+                Hệ sinh thái xanh mở rộng với mật độ cảnh quan khoáng đạt, công viên ven sông mang đến bầu không khí thanh bình và năng lượng sống tươi mới mỗi ngày.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 p-4 rounded-4 shadow-sm bg-white">
+              <div class="d-flex align-items-center mb-3">
+                <div class="p-3 rounded-circle me-3" style="background-color: var(--primary-light); color: var(--primary-color);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M1 2.828.828 3v10a1 1 0 0 0 1 1h14.344a1 1 0 0 0 1-1V3l-.172-.172H1zm1 1.172h14v9H2v-9zm2 2h10v1H4V6zm0 2h10v1H4V8zm0 2h6v1H4v-1z"/>
+                  </svg>
+                </div>
+                <h3 class="h5 fw-bold mb-0 text-primary">Mô hình tích hợp</h3>
+              </div>
+              <p class="text-secondary mb-0 small">
+                Được quy hoạch theo mô hình “Thành phố trong lòng thành phố”, đáp ứng trọn vẹn nhu cầu an cư, học tập, rèn luyện sức khỏe và vui chơi giải trí.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Features Section (3 Cards)
+         ======================================================================== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title">Trải nghiệm chuẩn sống khác biệt</h2>
+          <p class="section-subtitle">
+            Khám phá những giá trị cốt lõi làm nên không gian sống lý tưởng và cộng đồng phồn vinh tại đại đô thị.
+          </p>
+        </div>
+
+        <!-- 3 Feature Cards Grid -->
+        <div class="row g-4 justify-content-center">
+          <!-- Feature 1: Lối sống thượng lưu -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card">
+              <div class="feature-img-wrapper">
+                <img 
+                  src="assets/images/lifestyle.jpg" 
+                  alt="Không gian sống thượng lưu hiện đại kết hợp hài hòa với cảnh quan thiên nhiên" 
+                  class="feature-img"
+                  loading="lazy"
+                  width="800"
+                  height="533">
+              </div>
+              <div class="feature-card-body">
+                <h3 class="feature-card-title">Lối sống thượng lưu</h3>
+                <p class="feature-card-text">
+                  Môi trường sống hiện đại, không gian xanh thoáng mát kết nối hài hòa cùng cộng đồng cư dân văn minh, mang lại giá trị sống đẳng cấp cho mọi thế hệ.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Feature 2: Tiện ích tối ưu -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card">
+              <div class="feature-img-wrapper">
+                <img 
+                  src="assets/images/amenities.jpg" 
+                  alt="Hồ bơi phong cách nghỉ dưỡng và tiện ích thể thao phục vụ đời sống cư dân" 
+                  class="feature-img"
+                  loading="lazy"
+                  width="800"
+                  height="533">
+              </div>
+              <div class="feature-card-body">
+                <h3 class="feature-card-title">Tiện ích tối ưu</h3>
+                <p class="feature-card-text">
+                  Hệ sinh thái tiện ích đa dạng và đồng bộ phục vụ trọn vẹn đời sống cư dân, từ hồ bơi phong cách nghỉ dưỡng, công viên giải trí đến các khu thể thao năng động.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Feature 3: Pháp lý nhanh gọn -->
+          <div class="col-lg-4 col-md-6">
+            <article class="feature-card">
+              <div class="feature-img-wrapper">
+                <img 
+                  src="assets/images/legal.jpg" 
+                  alt="Không gian tư vấn chuyên nghiệp với quy trình giới thiệu thông tin rõ ràng minh bạch" 
+                  class="feature-img"
+                  loading="lazy"
+                  width="800"
+                  height="533">
+              </div>
+              <div class="feature-card-body">
+                <h3 class="feature-card-title">Pháp lý nhanh gọn</h3>
+                <p class="feature-card-text">
+                  Quy trình được giới thiệu rõ ràng, minh bạch, giúp khách hàng dễ dàng tìm hiểu thông tin dự án.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. CTA / Đăng ký tư vấn Section
+         ======================================================================== -->
+    <section id="cta" class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="row align-items-center g-4">
+            <!-- Left Info Column -->
+            <div class="col-lg-6 text-start">
+              <span class="hero-eyebrow text-white mb-3" style="background-color: rgba(255, 255, 255, 0.15);">ĐĂNG KÝ TƯ VẤN</span>
+              <h2 class="cta-title text-start mb-3">Sẵn sàng khám phá không gian sống mới?</h2>
+              <p class="cta-desc text-start ms-0 mb-4">
+                Đăng ký để nhận trọn bộ tài liệu thông tin và đồng hành cùng đội ngũ tư vấn chuyên nghiệp trải nghiệm không gian sống tại Vinhomes Grand Park.
+              </p>
+              <ul class="benefit-list">
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span>Nhận trọn bộ thông tin quy hoạch và thiết kế chi tiết</span>
+                </li>
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span>Đội ngũ chuyên viên tư vấn tận tâm và bảo mật thông tin</span>
+                </li>
+                <li>
+                  <span class="benefit-icon">✓</span>
+                  <span>Cập nhật tiến độ dự án và các tiện ích mới nhất</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right Form Column: Đăng ký tư vấn -->
+            <div class="col-lg-6">
+              <div class="consultation-card text-start">
+                <h3 class="consultation-card-title">Đăng ký tư vấn</h3>
+                <p class="text-secondary small mb-3">Vui lòng để lại thông tin, chúng tôi sẽ hỗ trợ quý khách chu đáo nhất.</p>
+                
+                <form id="inlineConsultationForm">
+                  <div class="mb-3">
+                    <label for="inlineFullName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="inlineFullName" placeholder="Ví dụ: Nguyễn Văn A" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inlinePhoneNumber" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="inlinePhoneNumber" placeholder="Ví dụ: 0912 345 678" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inlineEmail" class="form-label">Email (không bắt buộc)</label>
+                    <input type="email" class="form-control" id="inlineEmail" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inlineInterest" class="form-label">Nhu cầu quan tâm</label>
+                    <select class="form-select" id="inlineInterest">
+                      <option value="Tư vấn tổng quan dự án" selected>Tư vấn tổng quan dự án</option>
+                      <option value="Tìm hiểu căn hộ cao cấp">Tìm hiểu căn hộ cao cấp</option>
+                      <option value="Tìm hiểu biệt thự / nhà phố">Tìm hiểu biệt thự / nhà phố</option>
+                      <option value="Nhận tài liệu thông tin dự án">Nhận tài liệu thông tin dự án</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary-custom w-100 py-2 mt-2">
+                    Đăng ký tư vấn ngay
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       5. Footer
+       ========================================================================== -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Footer Column 1: Brand & Overview -->
+        <div class="col-lg-4 col-md-6">
+          <span class="footer-brand">Vinhomes</span>
+          <p class="footer-desc">
+            Vinhomes Grand Park — Đại đô thị đẳng cấp tại Thành phố Thủ Đức, TP. Hồ Chí Minh. Nơi kiến tạo chuẩn mực sống xanh, tiện nghi và văn minh cho cộng đồng tinh hoa.
+          </p>
+        </div>
+
+        <!-- Footer Column 2: Navigation Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Liên kết nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#overview">Tổng quan dự án</a></li>
+            <li><a href="#features">Tiện ích nổi bật</a></li>
+            <li><a href="#contact">Thông tin liên hệ</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact Information -->
+        <div class="col-lg-4 col-md-12">
+          <h4 class="footer-heading">Thông tin liên hệ</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span><strong>Địa chỉ:</strong> Khu đô thị Vinhomes Grand Park, Phường Long Bình & Long Thạnh Mỹ, Thành phố Thủ Đức, TP. Hồ Chí Minh</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <span><strong>Hotline:</strong> 1900 xxxx (Số hotline mẫu / tham khảo)</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <span><strong>Email:</strong> lienhe@vinhomesgrandpark.example.com (Email mẫu / tham khảo)</span>
+            </li>
+          </ul>
+
+          <div class="footer-disclaimer">
+            <small><strong>Ghi chú:</strong> Trang web được xây dựng phục vụ mục đích minh họa landing page dự án. Các thông tin liên hệ và số liệu trên đây mang tính chất tham khảo mẫu.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom text-center">
+        <p class="mb-0">© 2026 Vinhomes Grand Park. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       6. Interactive Consultation Modal (Bootstrap 5)
+       ========================================================================== -->
+  <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="consultationModalLabel">Đăng ký nhận tư vấn thông tin</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng cửa sổ"></button>
+        </div>
+        <div class="modal-body">
+          <form id="consultationForm">
+            <p class="text-secondary small mb-3">
+              Vui lòng để lại thông tin để nhận tài liệu giới thiệu dự án và giải đáp thắc mắc chi tiết.
+            </p>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="fullName" placeholder="Ví dụ: Nguyễn Văn A" required>
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Ví dụ: 0912 345 678" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerEmail" class="form-label">Email (không bắt buộc)</label>
+              <input type="email" class="form-control" id="customerEmail" placeholder="email@example.com">
+            </div>
+            <div class="mb-4">
+              <label for="modalInterest" class="form-label">Nhu cầu quan tâm</label>
+              <select class="form-select" id="modalInterest">
+                <option value="Tư vấn tổng quan dự án" selected>Tư vấn tổng quan dự án</option>
+                <option value="Tìm hiểu căn hộ cao cấp">Tìm hiểu căn hộ cao cấp</option>
+                <option value="Tìm hiểu biệt thự / nhà phố">Tìm hiểu biệt thự / nhà phố</option>
+                <option value="Nhận tài liệu thông tin dự án">Nhận tài liệu thông tin dự án</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary-custom w-100 py-2">Gửi yêu cầu tư vấn</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       7. Success Popup Modal (Hiện ra kèm hình ảnh LIKE ngón tay cái)
+       ========================================================================== -->
+  <div class="modal fade" id="successPopupModal" tabindex="-1" aria-labelledby="successPopupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content success-popup-content">
+        <div class="text-center">
+          <img src="assets/images/thumbs-up.svg" alt="Hình ảnh LIKE ngón tay cái" width="96" height="96" class="like-thumb-img mb-3">
+          <h3 class="h4 fw-bold text-primary mb-2" id="successPopupModalLabel">Đăng ký thành công!</h3>
+          <p class="popup-message mb-4">Email đã được gửi cho admin. Chúng tôi sẽ liên hệ trong thời gian sớm nhất</p>
+          <button type="button" class="btn btn-primary-custom px-4 py-2" data-bs-dismiss="modal">Đồng ý</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS (includes Popper) via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

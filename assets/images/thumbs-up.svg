@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="likeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b3bb0" />
+      <stop offset="100%" stop-color="#2d2d86" />
+    </linearGradient>
+    <filter id="likeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#2d2d86" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Circle background -->
+  <circle cx="60" cy="60" r="54" fill="url(#likeGrad)" filter="url(#likeShadow)"/>
+
+  <!-- Decorative sparkles -->
+  <circle cx="24" cy="30" r="3" fill="#ffdd57" opacity="0.9" />
+  <circle cx="98" cy="34" r="3.5" fill="#ffdd57" opacity="0.9" />
+  <circle cx="94" cy="85" r="2.5" fill="#ffffff" opacity="0.7" />
+
+  <!-- Thumbs Up Hand (White) -->
+  <g transform="translate(32, 28) scale(1.15)">
+    <!-- Palm & fingers -->
+    <path d="M7 23.5C7 22.12 8.12 21 9.5 21H14V41H9.5C8.12 41 7 39.88 7 38.5V23.5Z" fill="#e0e0f8"/>
+    <path d="M16 21V41H37.2C38.9 41 40.4 39.8 40.8 38.1L43.8 26.6C44.4 24.3 42.7 22.2 40.3 22.2H30.5L32.2 14.1C32.6 12.2 31.7 10.3 30 9.4L29.1 8.9C28.2 8.4 27.1 8.8 26.6 9.7L18.8 20.2C18.2 21 17.2 21.5 16 21.5V21Z" fill="#ffffff"/>
+    
+    <!-- Finger indent accents -->
+    <path d="M30 27H38M30 32H37M30 37H35" stroke="#2d2d86" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+    
+    <!-- Cuff separator line -->
+    <line x1="14" y1="21" x2="14" y2="41" stroke="#2d2d86" stroke-width="1.5" opacity="0.2"/>
+  </g>
+</svg>
